@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.stats import zscore
 
-df = pd.read_csv("output_dummy.csv")
+df = pd.read_csv("output_dummy_im_bank.csv")
 
 exclude_cols = ["NUM", "금융상품", "나이대"]
 feature_cols = [col for col in df.columns if col not in exclude_cols]
